@@ -1,0 +1,40 @@
+.formulario {
+    display: flex;
+    margin: 0px auto;
+}
+.campo {
+    display: flex;
+    flex-direction: column;
+    margin: 10px ;
+}
+.row {
+    display: flex;
+    gap: 5px;
+    justify-content: flex-end;
+}
+
+form {
+    margin: 0px auto;
+}
+
+input {
+    font-size: 14px;
+}
+
+input[type="submit"] {
+    background-color: chartreuse;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    color: black;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: 'Roboto', sans-serif;
+}
+input[type="submit"]:hover {
+    cursor: pointer;
+}
+
+fieldset {
+    margin-bottom: 20px;
+}
