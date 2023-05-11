@@ -1,7 +1,8 @@
 import { useState ,useEffect } from 'react';
-import './Table.css'
-import axios from 'axios';
 import { API_URL } from '../config/variables'
+import axios from 'axios';
+
+import './Table.css'
 
 const Table = () => {
 

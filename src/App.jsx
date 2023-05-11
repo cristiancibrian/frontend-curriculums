@@ -1,8 +1,9 @@
-import Form from "./components/Form";
 import React from "react";
 import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
-import './App.css'
+
 import Table from "./components/Table";
+import Form from "./components/Form";
+import './App.css'
 
 function App() {
   return (
@@ -14,7 +15,7 @@ function App() {
               <Link to="/" className="enlace">Inicio</Link>
             </li>
             <li>
-              <Link to="/about" className="enlace">Registrar</Link>
+              <Link to="/crear" className="enlace">Registrar</Link>
             </li>
           </ul>
         </nav>

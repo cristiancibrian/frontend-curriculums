@@ -1,12 +1,12 @@
 import { useState } from 'react'
 import { useNavigate } from 'react-router-dom';
+import { API_URL } from '../config/variables';
+import Swal from 'sweetalert2';
+import axios from 'axios';
 
 import ReactLoading from 'react-loading'
-import axios from 'axios';
-import { API_URL } from '../config/variables';
-
 import './Form.css'
-import Swal from 'sweetalert2';
+
 
 const Form = () => {
   const [foto, setFoto] = useState({});
