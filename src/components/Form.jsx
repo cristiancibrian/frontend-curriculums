@@ -83,7 +83,7 @@ const Form = () => {
           />
         </div>
         <div className="campo">
-          <label htmlFor="nombre">Nombre</label>
+          <label htmlFor="nombre">Nombre <span className='obligatorio'>(obligatorio)</span></label>
           <input
             type="text"
             name="nombre"
@@ -93,7 +93,7 @@ const Form = () => {
           />
         </div>
         <div className="campo">
-        <label htmlFor="apellido_paterno">Apellido paterno</label>
+        <label htmlFor="apellido_paterno">Apellido paterno <span className='obligatorio'>(obligatorio)</span></label>
           <input
             type="text"
             name="apellido_paterno"
@@ -123,7 +123,7 @@ const Form = () => {
           />
         </div>
         <div className="campo">
-          <label htmlFor="telefono">Teléfono</label>
+          <label htmlFor="telefono">Teléfono <span className='obligatorio'>(obligatorio)</span></label>
           <input
             type="tel"
             name="telefono"
