@@ -21,7 +21,7 @@ function App() {
 
         <Routes>
           <Route path="/" element={<Table />} />
-          <Route path="/about" element={<Form />} />
+          <Route path="/crear" element={<Form />} />
         </Routes>
       </div>
     </Router>
