@@ -16,6 +16,14 @@
     gap: 5px;
     justify-content: flex-start;
 }
+@media(max-width: 480px) {
+    .contenedor.row {
+        flex-direction: column;
+    }
+    div.row {
+        flex-direction: column;
+    }
+}
 .centrar {
     justify-content: center;
 }
