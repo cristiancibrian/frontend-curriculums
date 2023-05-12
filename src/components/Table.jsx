@@ -3,6 +3,7 @@ import { API_URL } from '../config/variables'
 import axios from 'axios';
 
 import './Table.css'
+import { Link } from 'react-router-dom';
 
 const Table = () => {
 
@@ -32,7 +33,7 @@ useEffect(() => {
 }, [search, curriculums])
 
     return (
-        <>
+        <div className='contenedor'>
         <div className="barra-busqueda">
             <div className="campo">
                 <p>Buscar por número telefónico</p>
@@ -48,10 +49,7 @@ useEffect(() => {
                         <th>Apellido materno</th>
                         <th>Fecha de nacimiento</th>
                         <th>Teléfono</th>
-                        <th>Lugar de trabajo</th>
-                        <th>Puesto</th>
-                        <th>Sueldo</th>
-                        <th>Actividades</th>
+                        <th>Acciones</th>
                     </tr>
                 </thead>
                 <tbody>
@@ -59,7 +57,7 @@ useEffect(() => {
                         return (
                             <tr key={c.id}>
                                 <td>
-                                    <img src={c.foto ?? 'https://i.pinimg.com/280x280_RS/42/03/a5/4203a57a78f6f1b1cc8ce5750f614656.jpg' } alt="imagen curriculum" />
+                                    <img src={c.foto || 'https://i.pinimg.com/280x280_RS/42/03/a5/4203a57a78f6f1b1cc8ce5750f614656.jpg' } alt="imagen curriculum" />
                                 </td>
                                 <td>
                                     {c.nombre}    
@@ -77,23 +75,14 @@ useEffect(() => {
                                     {c.telefono}    
                                 </td>
                                 <td>
-                                    {c.lugar_trabajo}    
-                                </td>
-                                <td>
-                                    {c.puesto}    
-                                </td>
-                                <td>
-                                    {c.sueldo}    
-                                </td>
-                                <td>
-                                    {c.descripcion_actividades}    
+                                    <Link to={`/ver/${c.id}`}><button className='boton-consultar'><span className="material-symbols-outlined">search</span></button></Link>    
                                 </td>
                             </tr>
                         )
                     })}
                 </tbody>
             </table>
-        </>
+        </div>
     )
 }
 

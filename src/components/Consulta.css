@@ -1,0 +1,27 @@
+.contenedor {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.grid-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 50px;
+}
+
+.imagen {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.informacion {
+    text-align: center;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+.no-bold {
+    font-weight: 400;
+}

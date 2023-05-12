@@ -1,22 +1,6 @@
-table {
-    width: 100%;
-    padding: 20px;
-}
-
-th,
-td {
-  border: 1px solid black;
-  padding: 8px;
-  text-align: left;
-}
-
-
-th {
-  background-color: #f2f2f2;
-}
-
-img {
-    width: 100px;
+.contenedor {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .barra-busqueda {
@@ -28,4 +12,36 @@ img {
 .campo {
     display: flex;
     flex-direction: column;
+}
+
+.boton-consultar {
+  background-color: orange;
+  border: none;
+  border-radius: 50%;
+  padding: 10px;
+}
+.boton-consultar:hover {
+  cursor: pointer;
+  background-color: darkgoldenrod;
+}
+table {
+    width: 100%;
+    padding: 20px;
+}
+
+th,
+td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  text-align: center;
+}
+
+
+th {
+  background-color: #f2f2f2;
+}
+
+img {
+    width: 100px;
 }

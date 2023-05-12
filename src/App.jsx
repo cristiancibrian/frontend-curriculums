@@ -4,6 +4,7 @@ import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
 import Table from "./components/Table";
 import Form from "./components/Form";
 import './App.css'
+import Consulta from "./components/Consulta";
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Table />} />
           <Route path="/crear" element={<Form />} />
+          <Route path="/ver/:id" element={<Consulta />} />
         </Routes>
       </div>
     </Router>

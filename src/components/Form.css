@@ -1,6 +1,10 @@
+.contenedor {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 1080px;
+}
 .formulario {
-    display: flex;
-    margin: 0px auto;
+    margin: 0;
 }
 .campo {
     display: flex;
@@ -10,33 +14,83 @@
 .row {
     display: flex;
     gap: 5px;
-    justify-content: flex-end;
+    justify-content: flex-start;
+}
+.centrar {
+    justify-content: center;
 }
 .obligatorio {
     font-size: 12px;
     color: red;
 }
-
+.boton {
+    height: min-content;
+    padding: 10px 20px;
+    text-transform: uppercase;
+    border: none;
+    border-radius: 10px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 700;
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton-rojo {
+    background-color: red;
+    color: white;
+}
+.boton-rojo:hover {
+    background-color: darkred;
+}
+.boton-verde {
+    background-color: green;
+    color: white;
+}
+.boton-verde:hover {
+    background-color: darkgreen;
+}
+.columna {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 250px;
+}
+.margen-abajo {
+    margin-bottom: 20px;
+}
+.caja {
+    width: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid black;
+    margin-bottom: 55px;
+}
+.item {
+    width: 90%;
+    margin: 0;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 10px 0;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-size: 14px;
+}
+.item-experiencia {
+    background-color: red;
+    color: white;
+}
+.item-sin-experiencia {
+    background-color: gray;
+    color: black;
+}
 form {
     margin: 0px auto;
 }
 
 input {
     font-size: 14px;
-}
-
-input[type="submit"] {
-    background-color: chartreuse;
-    border: none;
-    padding: 10px 20px;
-    border-radius: 10px;
-    color: black;
-    text-transform: uppercase;
-    font-weight: 700;
-    font-family: 'Roboto', sans-serif;
-}
-input[type="submit"]:hover {
-    cursor: pointer;
 }
 
 fieldset {
